@@ -4,3 +4,27 @@
   margin-right: auto;
   width: 50%
 }
+
+.shipping {
+  text-align: center;
+}
+
+.payment {
+  text-align: center;
+}
+
+.checkout {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+form{
+  text-align: left;
+}
