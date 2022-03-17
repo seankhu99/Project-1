@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Check Out Page</title>
-  <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <title>Check Out Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <div class="logo">
+  <header id="header">
+    <h1>DIY Fingerboards</h1>
+  </header>
+
+  <figure id="logo">
     <img src="images/diyfb.jpg" alt="logo-picture" class="center">
-  </div>
-  <div id = "heading">
-    <h1>CHECKOUT</h1>
-    <form>
+  </figure>
+
+  <main id ="main">
+    <h2>CHECKOUT</h2>
+    <form name="checkout">
       <label for="fname">First Name</label><br>
       <input type="text" id="fname" name="fname"><br>
       <label for="lname">Last Name</label><br>
@@ -31,11 +36,11 @@
       <label for="phone">Phone Number</label><br>
       <input type="text" id="phone" name="phone"><br>
     </form>
-    <div class="shipping">
+    <h3>
       <a href="shipping/index.html">Proceed to Shipping</a>
-    </div>
-    <div class="copyright">
+    </h3>
+    <h5>
       <p>Copyright DIY Fingerboards 2022</p>
-    </div>
+    </h5>
 </body>
 </html>
