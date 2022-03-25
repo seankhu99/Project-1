@@ -1,28 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shipping</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <title>Payment</title>
   <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-    <h1>Enter your payment info.</h1>
+  <figure id="logo">
+    <img src="../images/diyfb.jpg" alt="logo-picture" class="center" />
+    <figcaption></figcaption>
+  </figure>
+  <header id="header">
+    <h1>Payment</h1>
+  </header>
+  <main id="main">
     <form>
-      <label for="number">Credit Card Number</label><br>
-      <input type="text" id="number" name="number"><br>
-      <label for="exp">Expiration Date</label><br>
-      <input type="text" id="exp" name="exp"><br>
-      <label for="cvv">CVV</label><br>
-      <input type="text" id="CVV" name="CVV"><br>
-      <label for="cardzip">Billing Zipcode</label><br>
-      <input type="text" id="cardzip" name="cardzip"><br>
+      <ol>
+        <h3>Enter your card information</h3>
+        <li id="cardnumber">
+          <label for="number">Credit Card Number</label>
+          <input type="text" id="number" name="number" placeholder="Enter your card number here" required />
+        </li>
+        <li id="expiration">
+          <label for="exp">Expiration Date</label>
+          <input type="text" id="exp" name="exp" placeholder="Enter your card's expiration date" required />
+        </li>
+        <li id="cvvnumber">
+          <label for="cvvnum">CVV</label>
+          <input type="text" id="cvvnum" name="cvvnum" placeholder="Enter your card's CVV" required />
+        </li>
+        <li id="billing-zipcode">
+          <label for="cardzip">Billing Zipcode</label>
+          <input type="text" id="cardzip" name="cardzip" placeholder="Enter your billing zipcode" required />
+        </li>
+      </ol>
     </form>
-  </div>
-  <div class="checkout">
-    <a href="../checkout/index.html">Confirm Payment</a>
-  </div>
-  <h5>
+  </main>
+  <aside id="cart">
+    <p>Your cart</p>
+      <figure id="mold">
+        <img src="../images/diyfb-mold.jpg" alt="logo-picture" class="product" />
+        <figcaption>$120.00</figcaption>
+      </figure>
+  </aside>
+  <nav>
+    <ul>
+      <li>
+        <form name="button" action="../shipping/index.html">
+          <input type="submit" id="to-shipping" name="to-shipping" value="Back to Shipping Options" />
+        </form>
+      </li>
+      <li>
+        <form action="../checkout/index.html">
+          <input type="submit" value="Submit Order" />
+        </form>
+      </li>
+    </ul>
+  </nav>
+  <footer id="footer">
     <p>Copyright DIY Fingerboards 2022</p>
-  </h5>
+  </footer>
+  <script src="../js/site.js"></script>
 </body>
 </html>
