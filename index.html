@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <title>Check Out Page</title>
     <link rel="stylesheet" href="css/style.css"/>
-</head>
+  </head>
 <body>
   <header id="header">
-    <h1>DIY Fingerboards</h1>
   </header>
 
   <figure id="logo">
@@ -17,8 +16,8 @@
   </figure>
 
   <main id="main">
-    <h2>CHECKOUT</h2>
-    <form aria-labelledby="label-address" name="address" action="shipping" method="get">
+    <h1>CHECKOUT</h1>
+    <form>
       <fieldset name="return">
         <ol>
           <h3>Enter your personal information</h3>
@@ -111,12 +110,25 @@
       </fieldset>
     </form>
   </main>
-  <fieldset name="button">
-    <input type="submit" value="Continue to Shipping" />
-  </fieldset>
+  <aside id="cart">
+    <p>Your cart</p>
+      <figure id="mold">
+        <img src="images/diyfb-mold.jpg" alt="logo-picture" class="product" />
+        <figcaption>$120.00</figcaption>
+      </figure>
+  </aside>
+  <nav>
+    <ul>
+      <li>
+        <form name="button" action="shipping/index.html">
+          <input type="submit" id="to-shipping" name="to-shipping" value="Continue to Shipping" />
+        </form>
+      </li>
+    </ul>
+  </nav>
     <footer id="footer">
       <p>Copyright DIY Fingerboards 2022</p>
     </footer>
-  <script src="site.js"</script>
+    <script src="js/site.js"></script>
 </body>
 </html>
