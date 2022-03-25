@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker&family=Lato:wght@300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -7,16 +10,65 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+html {
+  font-family: Blinker, Lato, Roboto;
+  line-height: 2em;
+}
+
+body {
+  margin-top: 2em;
+  padding: 1em;
+}
+
+header {
+  font-family: Palette, Masaic;
+}
+
+aside {
+  display: inline-block;
+  margin-top: 3em;
+  padding: 2em;
+  text-align: : left;
+}
+
+nav {
+  text-align: left;
+}
+
+.product {
+  min-width: 4em;
+  height: 4em;
+}
 
 ol {
-  list-style: none
+  list-style: none;
+  margin-top: 0.75em;
+  padding: 0.2em;
+}
+
+input {
+  display: inline-block;
+  width: 17em;
+  position: relative;
+}
+
+label {
+  display: inline-block;
+  width: 10em;
+  padding: 0.2em;
+}
+
+
+li {
+  margin-top: 0.5em;
+  padding: 0.2em;
 }
 
 .center {
   display: block;
-  margin-left: auto;
   margin-right: auto;
-  width: 50%
+  margin-left: auto;
+  width: 50%;
 }
 
 .shipping {
@@ -33,10 +85,16 @@ ol {
 
 footer {
   text-align: center;
+  font-size: 0.75em;
+  margin-top: 2em;
+  padding: 1em;
 }
 
 h1 {
+  font-size: 1.75em;
   text-align: center;
+  margin-top: 1.75em;
+  padding: 0.2em;
 }
 
 h2 {
@@ -44,9 +102,11 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em;
 }
 
-form{
+form {
   text-align: left;
+
 }
