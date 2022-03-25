@@ -2,26 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <title>Shipping</title>
   <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
+  <figure id="logo">
+    <img src="../images/diyfb.jpg" alt="logo-picture" class="center" />
+    <figcaption></figcaption>
+  </figure>
   <header id="header">
     <h1>Shipping</h1>
   </header>
-  <main id="main>"
-    <p>Please select a shipping option</p>
-    <input type="radio" name="suggest"><label>USPS First Class</label><br>
-    <input type="radio" name="suggest"><label>USPS Priority Mail</label><br>
-    <input type="radio" name="suggest"><label>USPS Priority Mail Express</label><br>
-    <input type="radio" name="suggest"><label>UPS Grounds</label><br>
-    <input type="radio" name="suggest"><label>DHL Express</label><br>
+  <main id="main">
+    <ol id="shipping-options">
+      <h3>Please select a shipping option:</h3>
+      <li>
+        <label for="firstclass">Free : USPS First Class</label>
+        <input type="radio" id="firstclass" name="firstclass" value="free" checked/>
+      </li>
+      <li>
+        <label for="priority">$8.00 : USPS Priority Mail</label>
+        <input type="radio" id="priority" name="priority" value="priority"/>
+      </li>
+      <li>
+        <label for="priority-express">$40.00 : USPS Priority Mail Express</label>
+        <input type="radio" id="priority-express" name="priority=express" value="usps-express"/>
+      </li>
+      <li>
+        <label for="grounds">$16.00 : UPS Grounds</label>
+        <input type="radio" id="grounds" name="grounds" value="ups-ground"/>
+      </li>
+      <li>
+        <label for="dhl">$50.00 : DHL Express</label>
+        <input type="radio" id="dhl" name="dhl" value="dhl-express"/>
+      </li>
+    </ol>
   </main>
-  <div class="payment">
-    <a href="../payment/index.html">Proceed to Payment</a>
-  </div>
+  <aside id="cart">
+    <p>Your cart</p>
+      <figure id="mold">
+        <img src="../images/diyfb-mold.jpg" alt="logo-picture" class="product" />
+        <figcaption>$120.00</figcaption>
+      </figure>
+  </aside>
+  <nav>
+    <ul>
+      <li>
+        <form name="button" action="../index.html">
+          <input type="submit" id="back-to-address" name="back-to-address" value="Back to address page" />
+        </form>
+      </li>
+      <li>
+        <form name="button" action="../payment/index.html">
+          <input type="submit" value="Proceed to Payment" />
+        </form>
+      </li>
+    </ul>
+  </nav>
   <footer id="footer">
     <p>Copyright DIY Fingerboards 2022</p>
   </footer>
+  <script src="../js/site.js"></script>
 </body>
 </html>
